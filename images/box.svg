@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>box</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-desktop" transform="translate(-820.000000, -528.000000)">
+            <g id="Group-9" transform="translate(20.000000, 520.000000)">
+                <g id="Group-8" transform="translate(800.000000, 0.000000)">
+                    <g id="box" transform="translate(0.000000, 8.000000)">
+                        <polygon id="shape" fill="#A98258" points="41.3793103 0 8.62068966 0 0 13.7931034 0 50 50 50 50 13.7931034"></polygon>
+                        <polygon id="shape" fill="#DAAE86" points="8.62068966 0 0 13.7931034 50 13.7931034 41.3793103 0"></polygon>
+                        <polygon id="shape" fill="#D8B18B" points="28.4482759 46.5517241 25 43.1034483 21.5517241 46.5517241 19.8275862 44.8275862 19.8275862 50 30.1724138 50 30.1724138 44.8275862"></polygon>
+                        <rect id="shape" fill="#F4D5BD" x="19.8275862" y="0" width="10.3448276" height="13.7931034"></rect>
+                        <polygon id="shape" fill="#D8B18B" points="21.5517241 18.1034483 25 21.5517241 28.4482759 18.1034483 30.1724138 19.8275862 30.1724138 13.7931034 19.8275862 13.7931034 19.8275862 19.8275862"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

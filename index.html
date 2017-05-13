@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta description="Tienda virtual que permite abastecer tu negocio" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Riqra</title>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="carrito.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Riqra</h1>
+      <div class="caja-texto">
+        <input type="text" placeholder="¿Qué producto estas buscando?" />
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div>
+      <a href="#">Ingresa</a>
+      <button>Regístrate</button>
+      <div class="mostrar-carrito">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <div class="contador">0</div>
+      </div>
+    </div>
+  </header>
+  <aside class="carrito">
+    <div class="carrito-header">
+      Mi carrito (0)
+    </div>
+    <div class="carrito-section">
+      Aún no tienes productos en tu carrito
+    </div>
+    <div class="carrito-total">
+      S/ 0.00
+    </div>
+    <div class="carrito-footer">
+      Ver carrito
+    </div>
+  </aside>
+  <script>
+    var mostrarCarrito = document.getElementsByClassName('mostrar-carrito')[0];
+    mostrarCarrito.addEventListener('click', function () {
+      var carrito = document.getElementsByClassName('carrito')[0];
+      carrito.className += ' muestrate';
+    });
+  </script>
+</body>
+</html>

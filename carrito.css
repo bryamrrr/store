@@ -1,0 +1,40 @@
+.carrito {
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  right: -300px;
+}
+
+.carrito.muestrate {
+  right: 0;
+}
+
+.carrito-header {
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+.carrito-section, .carrito-total {
+  border-right: 1px solid #DDD;
+  border-left: 1px solid #DDD;
+}
+
+.carrito-section {
+  box-sizing: border-box;
+  height: 300px;
+  padding-top: 50px;
+}
+
+.carrito-total {
+  padding: 1em;
+}
+
+.carrito-footer {
+  background-color: rgb(255, 143, 13);
+  color: white;
+  padding: 1em;
+  font-size: 1.2em;
+}

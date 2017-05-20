@@ -3,6 +3,7 @@
   text-align: center;
   width: 300px;
   right: -300px;
+  transition: right .3s;
 }
 
 .carrito.muestrate {

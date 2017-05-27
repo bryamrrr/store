@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -92,7 +92,53 @@ h1 {
   font-size: 2em;
 }
 
+.productos { padding: 0 2em; }
 
+.productos img { width: 150px; }
 
+.productos article {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  width: 250px;
+}
 
+.productos figure {
+  margin: 0;
+  text-align: center;
+}
+
+.productos span, .productos button {
+  display: block;
+}
+
+.productos button {
+  background-color: #0082CD;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 30px;
+  outline: none;
+  padding: .5em 1em;
+  transition: background-color .3s;
+}
+
+.productos button:hover {
+  background-color: #4699c8;
+}
+
+.precio-venta {
+  color: red;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.precio-anterior {
+  text-decoration: line-through;
+}
 

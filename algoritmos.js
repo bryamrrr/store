@@ -63,6 +63,13 @@ function traducir(texto) { // 'zurrar'
     nuevoTexto += 'pe';
   }
 
+  if (texto.length >= 10) { // constitucion
+    const mitad = Math.floor(texto.length / 2);
+    const primeraMitad = texto.slice(0, mitad); // 'consti'
+    const segundaMitad = texto.slice(mitad); // 'tucion'
+    nuevoTexto = primeraMitad + '-' + segundaMitad;
+  }
+
   return nuevoTexto;
 }
 

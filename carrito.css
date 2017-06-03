@@ -24,12 +24,14 @@
 }
 
 .carrito-section {
+  background-color: white;
   box-sizing: border-box;
   height: 300px;
-  padding-top: 50px;
+  overflow: scroll;
 }
 
 .carrito-total {
+  background-color: white;
   padding: 1em;
 }
 
@@ -39,3 +41,27 @@
   padding: 1em;
   font-size: 1.2em;
 }
+
+.empty {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.carrito-section article {
+  padding: 1em;
+  text-align: left;
+}
+
+.carrito-section h4 {
+  display: inline-block;
+  margin: 0;
+}
+
+.carrito-section article span,
+.carrito-section article i {
+  float: right;
+}
+
+.carrito-section article i { margin-left: 6px; }
+
+.carrito-section article i:hover { cursor: pointer; }

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="carrito.css" />
+  <link rel="stylesheet" href="modal.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="app.js"></script>
 </head>
@@ -25,7 +26,7 @@
       <button>Regístrate</button>
       <div class="mostrar-carrito" id="js-mostrar-carrito">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        <div class="contador">0</div>
+        <div class="contador" id="js-contador">0</div>
       </div>
     </div>
   </header>
@@ -34,7 +35,7 @@
       Mi carrito (0)
     </div>
     <div class="carrito-section">
-      Aún no tienes productos en tu carrito
+      <span id="js-empty" class="empty">Aún no tienes productos en tu carrito</span>
     </div>
     <div class="carrito-total">
       S/ 0.00
@@ -46,5 +47,14 @@
   <section class="productos" id="js-productos">
     <h3>Productos para tu negocio</h3>
   </section>
+  <div class="overlay" id="js-modal">
+    <div class="contenedor">
+      <section class="mensaje">
+        <p>¿Estas seguro de agregar el producto al carrito?</p>
+        <button id="js-si">Si</button>
+        <button id="js-no">No</button>
+      </section>
+    </div>
+  </div>
 </body>
 </html>

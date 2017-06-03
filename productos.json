@@ -1,18 +1,16 @@
-{
-  "productos": [
-    {
-      "titulo": "Cristal botella de 310ml",
-      "descripcion": "Plancha 24 botellas de 310ml",
-      "precioAnterior": "S/ 64.00",
-      "precioVenta": "S/ 60.00",
-      "imagen": "20055169.jpg"
-    },
-    {
-      "titulo": "Cristal botella de 610ml",
-      "descripcion": "Plancha 24 botellas de 610ml",
-      "precioAnterior": "S/ 124.00",
-      "precioVenta": "S/ 100.00",
-      "imagen": "20055169.jpg"
-    }
-  ]
-}
+[
+  {
+    "titulo": "Cristal botella de 310ml",
+    "descripcion": "Plancha 24 botellas de 310ml",
+    "precioAnterior": "S/ 64.00",
+    "precioVenta": "S/ 60.00",
+    "imagen": "20055169.jpg"
+  },
+  {
+    "titulo": "Cristal botella de 610ml",
+    "descripcion": "Plancha 24 botellas de 610ml",
+    "precioAnterior": "S/ 124.00",
+    "precioVenta": "S/ 100.00",
+    "imagen": "20055169.jpg"
+  }
+]

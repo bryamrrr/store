@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" ng-app="tienda">
 <head>
   <meta description="Tienda virtual que permite abastecer tu negocio" />
   <meta charset="UTF-8" />
@@ -11,13 +11,15 @@
   <link rel="stylesheet" href="modal.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="app2.js"></script>
 </head>
 <body>
   <header>
     <div>
       <h1>Riqra</h1>
       <div class="caja-texto">
-        <input type="text" placeholder="¿Qué producto estas buscando?" />
+        <input type="text" placeholder="¿Qué producto estas buscando?" ng-model="texto" />
         <i class="fa fa-search" aria-hidden="true"></i>
       </div>
     </div>
@@ -44,8 +46,25 @@
       Ver carrito
     </div>
   </aside>
-  <section class="productos" id="js-productos">
+
+  {{productos}}
+
+  <section class="productos" id="js-productos" ng-controller="ProductosController">
     <h3>Productos para tu negocio</h3>
+
+    <article ng-repeat="producto in productos | filter: $parent.texto">
+      <figure>
+        <img ng-src="images/{{producto.imagen}}" alt="" />
+      </figure>
+      <h4>{{ producto.titulo }}</h4>
+      <p>{{ producto.descripcion }}</p>
+      <span class="precio-anterior">{{ producto.precioAnterior }}</span>
+      <span class="precio-venta">{{ producto.precioVenta }}</span>
+      <button>
+        <i class="fa fa-shopping-cart"></i>
+        Agregar
+      </button>
+    </article>
   </section>
   <div class="overlay" id="js-modal">
     <div class="contenedor">

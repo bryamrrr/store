@@ -9,39 +9,39 @@ $(document).ready(function () {
     $('#js-carrito').toggleClass('muestrate');
   });
 
-  $.ajax({
-    url: 'https://demo1719473.mockable.io/productos',
-    success: function (data) {
-      const modal = $('#js-modal');
-      let producto;
-      let i = 0;
+  // $.ajax({
+  //   url: 'https://demo1719473.mockable.io/productos',
+  //   success: function (data) {
+  //     const modal = $('#js-modal');
+  //     let producto;
+  //     let i = 0;
 
-      for (i; i < data.length; i++) {
-        let html = '<article>\
-            <figure>\
-              <img src="images/' + data[i].imagen + '" alt="" />\
-            </figure>\
-            <h4>' + data[i].titulo + '</h4>\
-            <p>' + data[i].descripcion + '</p>\
-            <span class="precio-anterior">' + data[i].precioAnterior + '</span>\
-            <span class="precio-venta">' + data[i].precioVenta + '</span>\
-            <button>\
-              <i class="fa fa-shopping-cart"></i>\
-              Agregar\
-            </button>\
-          </article>';
+  //     for (i; i < data.length; i++) {
+  //       let html = '<article>\
+  //           <figure>\
+  //             <img src="images/' + data[i].imagen + '" alt="" />\
+  //           </figure>\
+  //           <h4>' + data[i].titulo + '</h4>\
+  //           <p>' + data[i].descripcion + '</p>\
+  //           <span class="precio-anterior">' + data[i].precioAnterior + '</span>\
+  //           <span class="precio-venta">' + data[i].precioVenta + '</span>\
+  //           <button>\
+  //             <i class="fa fa-shopping-cart"></i>\
+  //             Agregar\
+  //           </button>\
+  //         </article>';
 
-        $('#js-productos').append(html);
-      }
+  //       $('#js-productos').append(html);
+  //     }
 
-      // MODAL
-      $('#js-productos').find('button').on('click', callback);
+  //     // MODAL
+  //     $('#js-productos').find('button').on('click', callback);
 
-      $('#js-si').on('click', agregarCarrito);
+  //     $('#js-si').on('click', agregarCarrito);
 
-      $('#js-no').on('click', function () { modal.hide(); })
-    }
-  });
+  //     $('#js-no').on('click', function () { modal.hide(); })
+  //   }
+  // });
 });
 
 function callback() {
@@ -54,7 +54,6 @@ function agregarCarrito() {
   const titulo = producto.find('h4').text();
   const precioVenta = producto.find('span.precio-venta').text();
   const carritoSection = $('#js-carrito').find('.carrito-section');
-  const precioNumerico;
   const html = '<article>\
       <h4>' + titulo + '</h4>\
       <i class="fa fa-times"></i>\
@@ -80,7 +79,6 @@ function agregarCarrito() {
     .text('Mi carrito (' + productosCarrito + ')');
 
   console.log('Aumentando el total');
-  precioVenta = 
   const precioNumerico = parseFloat(precioVenta.slice(3));
   totalCarrito += precioNumerico;
   carritoSection

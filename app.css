@@ -11,26 +11,22 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em 2em; }
-
-header > div {
-  display: flex; }
-
-header button {
-  background-color: #ff8f0d;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  margin: 0 2em; }
-
-header button:hover {
-  background-color: #ffa640;
-  cursor: pointer; }
-
-header a {
-  color: white;
-  text-decoration: none;
-  line-height: 37px; }
+  header > div {
+    display: flex; }
+  header button {
+    background-color: #ff8f0d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin: 0 2em; }
+    header button:hover {
+      background-color: #ffa640;
+      cursor: pointer; }
+  header a {
+    color: white;
+    text-decoration: none;
+    line-height: 37px; }
 
 .contador {
   box-sizing: border-box;
@@ -53,66 +49,56 @@ h1 {
 .caja-texto {
   position: relative;
   width: 500px; }
-
-.caja-texto input {
-  font-size: 1em;
-  box-sizing: border-box;
-  padding: 1em;
-  height: 35px;
-  width: 100%; }
-
-.caja-texto i {
-  font-size: 1.3em;
-  position: absolute;
-  top: 8px;
-  right: 10px; }
+  .caja-texto input {
+    font-size: 1em;
+    box-sizing: border-box;
+    padding: 1em;
+    height: 35px;
+    width: 100%; }
+  .caja-texto i {
+    font-size: 1.3em;
+    position: absolute;
+    top: 8px;
+    right: 10px; }
 
 .mostrar-carrito {
   position: relative; }
-
-.mostrar-carrito:hover {
-  cursor: pointer; }
-
-.mostrar-carrito i {
-  color: white;
-  font-size: 2em; }
+  .mostrar-carrito:hover {
+    cursor: pointer; }
+  .mostrar-carrito i {
+    color: white;
+    font-size: 2em; }
 
 .productos {
   padding: 0 2em; }
-
-.productos img {
-  width: 150px; }
-
-.productos article {
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  display: inline-block;
-  margin-right: 2em;
-  margin-bottom: 2em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  width: 250px; }
-
-.productos figure {
-  margin: 0;
-  text-align: center; }
-
-.productos span, .productos button {
-  display: block; }
-
-.productos button {
-  background-color: #0082CD;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 1em;
-  margin-top: 30px;
-  outline: none;
-  padding: .5em 1em;
-  transition: background-color .3s; }
-
-.productos button:hover {
-  background-color: #4699c8; }
+  .productos img {
+    width: 150px; }
+  .productos article {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    width: 250px; }
+  .productos figure {
+    margin: 0;
+    text-align: center; }
+  .productos span, .productos button {
+    display: block; }
+  .productos button {
+    background-color: #0082CD;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 30px;
+    outline: none;
+    padding: .5em 1em;
+    transition: background-color .3s; }
+    .productos button:hover {
+      background-color: #4699c8; }
 
 .precio-venta {
   color: red;

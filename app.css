@@ -209,4 +209,71 @@ h1 {
   background-color: #32a7f4;
   cursor: pointer; }
 
+section {
+  margin-bottom: 20px;
+  overflow: hidden; }
+
+.caja {
+  background-color: blue;
+  height: 300px; }
+
+.cajita {
+  background-color: green;
+  height: 100px;
+  margin-bottom: 10px;
+  width: calc(50% - 30px);
+  float: left;
+  margin-left: 20px; }
+  .cajita:last-of-type {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px; }
+
+.headlines {
+  width: calc(16.66667% - 23.33333px);
+  float: left;
+  margin-left: 20px; }
+
+.importante {
+  width: calc(58.33333% - 31.66667px);
+  float: left;
+  margin-left: 20px; }
+
+.segunda-noticia {
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px; }
+
+.noticia {
+  width: calc(16.66667% - 23.33333px);
+  float: left;
+  margin-left: 20px; }
+  .noticia:first-of-type {
+    margin-left: calc(16.66667% - 23.33333px + 40px); }
+
+.contenedora {
+  width: calc(50% - 30px);
+  float: left;
+  margin-left: 20px; }
+
+@media screen and (max-width: 900px) {
+  .headlines {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+    height: 100px;
+    margin-bottom: 20px; }
+
+  .importante {
+    width: calc(75% - 35px);
+    float: left;
+    margin-left: 20px; }
+
+  .noticia {
+    width: calc(25% - 25px);
+    float: left;
+    margin-left: 20px; }
+    .noticia:first-of-type {
+      margin-left: calc(0% - 20px + 40px); } }
+
 /*# sourceMappingURL=app.css.map */
